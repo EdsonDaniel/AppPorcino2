@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.appporcino.ui.home.HomeFragment"
+        android:label="@string/mi_granja"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_ganado"
+        android:name="com.example.appporcino.ui.home.HomeGanadoFragment"
+        android:label="@string/ganado"
+        tools:layout="@layout/fragment_home_ganado" />
+
+    <fragment
+        android:id="@+id/nav_eventos"
+        android:name="com.example.appporcino.ui.eventos.EventosFragment"
+        android:label="@string/eventos"
+        tools:layout="@layout/fragment_eventos" />
+
+    <fragment
+        android:id="@+id/nav_ventas"
+        android:name="com.example.appporcino.ui.ventas.VentasFragment"
+        android:label="@string/ventas"
+        tools:layout="@layout/fragment_ventas" />
+
+    <fragment
+        android:id="@+id/nav_perfil"
+        android:name="com.example.appporcino.ui.perfil.PerfilFragment"
+        android:label="@string/mi_perfil"
+        tools:layout="@layout/fragment_perfil" />
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.example.appporcino.ui.about.AboutFragment"
+        android:label="@string/about"
+        tools:layout="@layout/fragment_about" />
+
+</navigation>

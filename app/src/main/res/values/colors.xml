@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f54291</color>
+    <color name="colorPrimaryDark">#f54291</color>
+    <color name="colorAccent">#f54291</color>
+    <color name="colorAccent2">#D81B60</color>
+    <color name="suave">#ff78ae</color>
+    <color name="mediogris">#7E7E7E</color>
+</resources>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".NuevaVenta"
+    tools:showIn="@layout/activity_nueva_venta"
+    app:layout_goneMarginTop="30dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="90dp"
+            android:paddingBottom="50dp"
+            android:layout_marginTop="20dp">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_fecha_venta"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/fecha_venta_2"
+                app:errorEnabled="true"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="30dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/fecha_venta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:textSize="16sp"
+                    android:paddingTop="10dp"
+                    android:cursorVisible="false"
+                    android:paddingBottom="10dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_monto"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/monto_total"
+                app:errorEnabled="true"
+                app:prefixText=" $ "
+                app:prefixTextColor="@color/colorPrimary"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/monto_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:textSize="16sp"
+                    android:focusable="false"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/label_ejemplares"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="@string/ejem_vender"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/input_fecha_venta"
+                android:textSize="16sp"
+                android:layout_marginBottom="7dp"
+                android:textColor="@android:color/holo_blue_dark" />
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.MaterialComponents.CardView"
+                android:id="@+id/card"
+                android:layout_marginLeft="33dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="33dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginBottom="5dp"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/label_ejemplares"
+                app:layout_goneMarginBottom="10dp"
+                app:strokeColor="@color/colorPrimary"
+                android:elevation="5dp"
+                app:cardCornerRadius="7dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:id="@+id/label_vacio"
+                        android:layout_width="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:paddingTop="2dp"
+                        android:paddingStart="2dp"
+                        android:paddingEnd="2dp"
+                        android:textSize="14sp"
+                        android:text="@string/lista_vacia"
+                        android:textAlignment="center"
+                        android:textColor="@color/mediogris"/>
+                    <TextView
+                        android:id="@+id/label_agrega"
+                        android:layout_width="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@+id/label_vacio"
+                        android:paddingTop="2dp"
+                        android:paddingStart="2dp"
+                        android:paddingEnd="2dp"
+                        android:textSize="14sp"
+                        android:textAlignment="center"
+                        android:text="@string/agrega_ejem"
+                        android:textColor="@color/mediogris"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                app:layout_goneMarginBottom="100dp"
+                app:layout_goneMarginTop="20dp"
+                app:layout_constraintHeight_min="100dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/label_ejemplares"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/list"
+                android:name="com.example.appporcino.EjemplarFragment2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:layoutManager="LinearLayoutManager"
+                tools:context=".EjemplarFragment"
+                tools:listitem="@layout/card_view2">
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_client"
+                app:layout_goneMarginTop="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:hint="@string/cliente2"
+                app:errorEnabled="true"
+                app:layout_constraintTop_toBottomOf="@id/list">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/cliente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:textSize="16sp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:imeOptions="actionDone"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:hint="@string/notas"
+                app:errorEnabled="true"
+                app:helperTextTextColor="@android:color/secondary_text_light"
+                app:helperText="Información adicional de la venta(Opcional)"
+                app:helperTextEnabled="true"
+                app:layout_constraintTop_toBottomOf="@id/input_client">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/descripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="2"
+                    android:inputType="textMultiLine"
+                    android:textSize="16sp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:imeOptions="actionDone"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/obligatorio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="@string/campos_obligatorios"
+                android:layout_marginTop="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/input_descripcion"
+                android:textSize="12sp"
+                android:textColor="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/agregar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/agregar"
+                android:layout_marginTop="6dp"
+                app:layout_constraintTop_toBottomOf="@+id/obligatorio"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:background="@drawable/boton_redondeado"
+                android:layout_marginBottom="150dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

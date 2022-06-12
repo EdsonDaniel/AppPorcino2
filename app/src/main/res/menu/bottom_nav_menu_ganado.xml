@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_todos"
+        android:icon="@drawable/todos"
+        android:title="@string/todos" />
+
+    <item
+        android:id="@+id/navigation_hembras"
+        android:icon="@drawable/hembra2"
+        android:title="@string/hembras" />
+
+    <item
+        android:id="@+id/navigation_engorda"
+        android:icon="@drawable/engorda2"
+        android:title="@string/engorda" />
+
+    <item
+        android:id="@+id/navigation_semental"
+        android:icon="@drawable/verraco2"
+        android:title="@string/sementales" />
+
+</menu>

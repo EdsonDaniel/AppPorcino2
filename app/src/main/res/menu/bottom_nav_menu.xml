@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/inicio" />
+
+    <item
+        android:id="@+id/navigation_produccion"
+        android:icon="@drawable/ic_produccion"
+        android:title="@string/produccion" />
+
+    <item
+        android:id="@+id/navigation_gastos"
+        android:icon="@drawable/pagos"
+        android:title="@string/gastos" />
+
+    <item
+        android:id="@+id/navigation_alertas"
+        android:icon="@drawable/ic_alerta"
+        android:title="@string/recordatorios" />
+
+</menu>

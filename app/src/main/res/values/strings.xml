@@ -1,0 +1,180 @@
+<resources>
+    <string name="app_name">App Porcino</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Control porcino</string>
+    <string name="nav_header_subtitle">Admnistra tu granja de forma sencilla</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="todos">Todos</string>
+    <string name="hembras">Hembras</string>
+    <string name="engorda">Engorda</string>
+    <string name="mi_granja">Mi Granja</string>
+    <string name="inicio">Inicio</string>
+    <string name="ganado">Ganado</string>
+    <string name="eventos">Eventos y tareas</string>
+    <string name="cuenta">Mi Cuenta</string>
+    <string name="porcicultura">Porcicultura</string>
+    <string name="perfil">Mi perfil</string>
+    <string name="about">Sobre nosotros</string>
+    <string name="sementales">Sementales</string>
+    <string name="action_settings">Configuración</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="produccion">Producción</string>
+    <string name="gastos">Gastos</string>
+    <string name="alertas">Alertas</string>
+    <string name="nombre">Nombre*</string>
+    <string name="edad">Edad</string>
+    <string name="title_activity_agregar_ganado">AgregarGanado</string>
+    <string name="fecha_nac">Fecha Nacimiento*</string>
+    <string name="raza">Raza</string>
+    <string name="tipo">Tipo</string>
+    <string name="hembra">Hembra</string>
+    <string name="macho">Macho</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="genero">Género</string>
+    <string name="peso">Peso</string>
+    <string name="num_crias">Núm Crías*</string>
+    <string name="agregar">Agregar</string>
+    <string name="fecha_compra">Fecha Compra</string>
+    <string name="proposito">Propósito*</string>
+    <string name="opcional">Opcional</string>
+    <string name="adquisicion">Fecha Adquisición*</string>
+    <string name="campos_obligatorios">* Campos obligatorios</string>
+    <string name="sexo">Sexo</string>
+    <string name="title_dialog">Hembra creada satisfactoriamente</string>
+    <string name="title_eliminar">Eliminar ejemplar</string>
+    <string name="title_pequ">Lo sentimos</string>
+    <string name="title_eliminar_event">Eliminar Evento</string>
+    <string name="title_eliminar_elemento">Eliminar Elemento</string>
+    <string name="message_dialog">¿Desea agregar detalles sobre los partos del ejemplar?</string>
+    <string name="message_eliminar">¿Desea eliminar este ejemplar? Una vez eliminado NO se podrán recuperar los datos</string>
+    <string name="message_peque">Su ejemplar es muy pequeño para vender.\nDebe tener al menos 50 días de edad</string>
+    <string name="message_selecciona">Selecciona un ejemplar</string>
+    <string name="message_eliminar_evento">¿Desea eliminar este Evento? Una vez eliminado NO se podrán recuperar los datos</string>
+    <string name="message_eliminar_elemento">¿Desea eliminar este Elemento? Una vez eliminado NO se podrán recuperar los datos</string>
+    <string name="cancelar">Cancelar</string>
+
+    <string-array name="tipos">
+        <item>Cría</item>
+        <item>Engorda</item>
+        <item>Semental</item>
+    </string-array>
+    <string-array name="pagos">
+        <item>Visita del veterinario</item>
+        <item>Pago de alimento</item>
+        <item>Pago de agua potable</item>
+        <item>Pago de la luz</item>
+        <item>Pago por inseminación</item>
+    </string-array>
+    <string-array name="razas">
+        <item>Landrace</item>
+        <item>Yorkshire</item>
+        <item>Duroc</item>
+        <item>Hampshire</item>
+        <item>Cruza</item>
+        <item>Otra</item>
+    </string-array>
+    <string name="title_activity_lista">Lista</string>
+    <string name="foto">foto</string>
+    <string name="prueba">Prueba</string>
+    <string name="subtitulo">subtitulo</string>
+    <string name="title_activity_detalle_porcino">DetallePorcino</string>
+    <string name="estado">Estado</string>
+    <string name="cargada">Cargada</string>
+    <string name="duroc">Duroc</string>
+    <string name="adquirido">Adquirido:</string>
+    <string name="costo_a">Costo Adquisición:</string>
+    <string name="title_activity_detalles_crias">Partos registrados</string>
+    <string name="cria_num">Cría número:</string>
+    <string name="exitoso">Parto exitoso</string>
+    <string name="aborto">Aborto</string>
+    <string name="total_lechones">Lechones totales</string>
+    <string name="vivos">Vivos</string>
+    <string name="muertos">Muertos</string>
+    <string name="fecha_cruza">Fecha Cruza</string>
+    <string name="fecha_parto">Fecha Parto</string>
+    <string name="destete">Destete</string>
+    <string name="lechones">Lechones</string>
+    <string name="total">Total</string>
+    <string name="fechas">Fechas</string>
+    <string name="cruza">Cruza</string>
+    <string name="parto">Parto</string>
+    <string name="num_cria">Num Cría</string>
+    <string name="tipo_parto">Tipo de Parto</string>
+    <string name="notas_parto">Notas sobre el parto</string>
+    <string name="notas">Notas</string>
+    <string name="title_activity_agregar_gasto">Agregar pago</string>
+    <string name="concepto">Concepto*</string>
+    <string name="fecha_pago">Fecha de pago*</string>
+    <string name="fecha_pago2">Fecha de pago</string>
+    <string name="monto">Monto*</string>
+    <string name="descripcion">Descripción</string>
+    <string name="title_activity_agregar_recordatorio">Agregar Recordatorio</string>
+    <string name="titulo">Título*</string>
+    <string name="titulo2">Título</string>
+    <string name="fecha_recordatorio">Fecha recordatorio*</string>
+    <string name="hora">Hora*</string>
+    <string name="hora2">Hora</string>
+    <string name="title_activity_nueva_monta">Nueva Monta</string>
+    <string name="monta_natural">Monta natural</string>
+    <string name="artificial">Inseminación artificial</string>
+    <string name="semental">Semental</string>
+    <string name="fecha_monta">Fecha de monta*</string>
+    <string name="costo_ad">Costo adquisisción</string>
+    <string name="ver_detalles"><u>Ver detalles de partos</u></string>
+    <string name="action_editar">Editar</string>
+    <string name="ver_partos">Ver partos</string>
+    <string name="action_eliminar">Eliminar</string>
+    <string name="nueva_monta">Registrar nueva monta</string>
+    <string name="action_vender">Vender</string>
+    <string name="title_activity_agregar_evento">Agregar Evento</string>
+    <string name="title_activity_agregar_parto">Agregar Parto</string>
+    <string name="ventas">Ventas</string>
+    <string name="cliente">Nombre del cliente</string>
+    <string name="cliente2">Nombre del cliente*</string>
+    <string name="cero">0</string>
+    <string name="recordatorios">Recordatorios</string>
+    <string name="title_activity_nueva_monta_semental">Nueva monta</string>
+    <string name="action_ver">Ver en el calendario</string>
+    <string name="title_activity_nueva_venta">Nueva venta</string>
+    <string name="ejem_vender">Ejemplares a vender:</string>
+    <string name="monto_total">Monto total</string>
+    <string name="vendido_a">Vendido a:</string>
+    <string name="title_activity_detalle_venta">Detalle de la venta</string>
+    <string name="ejemplares_vendidos">Ejemplares vendidos:</string>
+    <string name="lista_ejemplares">Lista de ejemplares:</string>
+    <string name="fecha_venta">Fecha de venta:</string>
+    <string name="notas_venta">Notas sobre la venta:</string>
+    <string name="mi_perfil">Mi perfil</string>
+    <string name="nombre_usuario">Nombre de usuario:</string>
+    <string name="correo_e">Correo electrónico:</string>
+    <string name="genero_usuario">Género:</string>
+    <string name="datos_generales">Datos generales</string>
+    <string name="total_animales">Total animales:</string>
+    <string name="numero_seis">6 ejemplares</string>
+    <string name="total_hembras">Total hembras</string>
+    <string name="hembras_cargadas">Cargadas</string>
+    <string name="lactando">Lactando</string>
+    <string name="en_engorda">En engorda</string>
+    <string name="vendidos">Vendidos</string>
+    <string name="total_ventas_regis">Monto total ventas</string>
+    <string name="monto_montas">Monto cruzas semental</string>
+    <string name="total_sementales">Total sementales</string>
+    <string name="total_engorda">Total engorda</string>
+    <string name="ventas_ingresos">Ingresos</string>
+    <string name="total_vendidos">Total vendidos</string>
+    <string name="detalles_produccion">Detalles de producción</string>
+    <string name="tareas_y_eventos">Tareas y eventos pendientes:</string>
+    <string name="lista_vacia">(Lista vacía)</string>
+    <string name="agrega_ejem">Agrega ejemplares para vender</string>
+    <string name="presiona_para_add">Presiona para agregar</string>
+    <string name="fecha_venta_2">Fecha de venta*</string>
+    <string name="title_activity_detalle_gasto">Detalle de Pago</string>
+    <string name="concepto_pago">Concepto de pago</string>
+    <string name="title_activity_detalle_recordatorio">Detalles de Recordatorio</string>
+    <string name="fecha">Fecha</string>
+</resources>

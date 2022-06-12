@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_gasto="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- A CardView that contains a TextView -->
+    <com.google.android.material.card.MaterialCardView
+        style="@style/Widget.MaterialComponents.CardView"
+        android:id="@+id/card_gasto"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="4dp"
+        android:minHeight="300dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="5dp"
+        android:elevation="5dp"
+        card_gasto:cardCornerRadius="7dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageViewGasto"
+                android:layout_width="45dp"
+                android:layout_marginStart="8dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                card_gasto:srcCompat="@drawable/pork"
+                android:contentDescription="@string/foto" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+           <TextView
+               android:id="@+id/concepto_label"
+               android:textSize="15sp"
+               android:layout_width="wrap_content"
+               card_gasto:layout_constraintStart_toStartOf="parent"
+               android:layout_height="wrap_content"
+               card_gasto:layout_constraintTop_toTopOf="parent"
+               android:paddingEnd="2dp"
+               android:paddingStart="2dp"
+               android:paddingTop="5dp"
+               android:text="@string/prueba" />
+
+            <TextView
+                android:id="@+id/fecha_pago_label"
+                android:layout_width="wrap_content"
+                card_gasto:layout_constraintEnd_toEndOf="parent"
+                android:layout_height="wrap_content"
+                card_gasto:layout_constraintTop_toTopOf="parent"
+                android:paddingTop="4dp"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                android:textSize="16sp"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:text="@string/prueba" />
+        </LinearLayout>
+        </LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/monto_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:text="@string/subtitulo"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textSize="17sp"
+                android:textColor="@color/colorPrimary"
+                card_gasto:layout_constraintEnd_toEndOf="parent"
+                card_gasto:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.appporcino">
+
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".DetalleRecordatorio"
+            android:label="@string/title_activity_detalle_recordatorio"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".DetalleGasto"
+            android:label="@string/title_activity_detalle_gasto"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DetalleVenta"
+            android:label="@string/title_activity_detalle_venta"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NuevaVenta"
+            android:label="@string/title_activity_nueva_venta"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AgregarParto"
+            android:label="@string/title_activity_agregar_parto"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NuevaMonta"
+            android:label="@string/title_activity_nueva_monta_semental"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NuevaMontaSemental"
+            android:label="@string/title_activity_nueva_monta_semental"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AgregarRecordatorio"
+            android:label="@string/title_activity_agregar_recordatorio"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AgregarGasto"
+            android:label="@string/title_activity_agregar_gasto"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DetallesCrias"
+            android:label="@string/title_activity_detalles_crias"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DetallePorcino"
+            android:label="@string/title_activity_detalle_porcino"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AgregarGanado"
+            android:label="@string/title_activity_agregar_ganado"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.provider.calendar.action.HANDLE_CUSTOM_EVENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.item/event" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

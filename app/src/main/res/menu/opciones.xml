@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_ver"
+        android:title="@string/action_ver"
+        app:showAsAction="never"
+        android:icon="@drawable/number"
+        />
+    <item
+        android:id="@+id/action_editar"
+        android:title="@string/action_editar"
+        app:showAsAction="never"
+        android:icon="@drawable/number"
+         />
+    <item
+        android:id="@+id/action_eliminar"
+        android:title="@string/action_eliminar"
+        app:showAsAction="never"
+         />
+</menu>

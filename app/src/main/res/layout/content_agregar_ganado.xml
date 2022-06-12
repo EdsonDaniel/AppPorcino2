@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AgregarGanado"
+    tools:showIn="@layout/activity_agregar_ganado">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:paddingBottom="50dp"
+            >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/todos"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/pork" />
+
+            <TextView
+                android:id="@+id/label_genero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/sexo"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+            <RadioGroup
+                android:id="@+id/grupo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/label_genero"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <RadioButton
+                    android:id="@+id/hembra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/hembra"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10dp"
+                    android:checked="true"
+                    android:layout_marginStart="20dp" />
+
+                <RadioButton
+                    android:id="@+id/macho"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/macho"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="10dp" />
+            </RadioGroup>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="2dp"
+                android:hint="@string/nombre"
+                app:errorEnabled="true"
+                app:counterEnabled="true"
+                app:counterMaxLength="30"
+                app:layout_constraintTop_toBottomOf="@+id/grupo">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textSize="16sp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:imeOptions="actionDone"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_raza"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/raza"
+                app:errorEnabled="true"
+                app:layout_constraintTop_toBottomOf="@+id/input_nombre"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginStart="30dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/raza"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:completionThreshold="0"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:singleLine="true"
+                    android:textSize="16sp"
+                    tools:ignore="LabelFor" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_tipo"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/proposito"
+                app:layout_constraintTop_toBottomOf="@+id/input_nombre"
+                app:layout_constraintRight_toRightOf="parent"
+                app:errorEnabled="true"
+                android:layout_marginEnd="30dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/filled_exposed_dropdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:editable="false"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:textSize="16sp"
+                    tools:ignore="LabelFor" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_fecha"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/fecha_nac"
+                app:errorEnabled="true"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/input_raza"
+                android:layout_marginStart="30dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/fecha_nac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:textSize="16sp"
+                    android:paddingTop="10dp"
+                    android:cursorVisible="false"
+                    android:paddingEnd="4dp"
+                    android:paddingBottom="10dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_numero"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/num_crias"
+                app:errorEnabled="true"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/input_tipo"
+                android:layout_marginEnd="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/num_crias"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textSize="16sp"
+                    android:imeOptions="actionNext"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_fecha_compra"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/adquisicion"
+                app:errorEnabled="true"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/input_fecha"
+                android:layout_marginStart="30dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fecha_compra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:maxLines="1"
+                android:textSize="16sp"
+                android:cursorVisible="false"
+                android:paddingTop="10dp"
+                android:paddingEnd="4dp"
+                android:paddingBottom="10dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_costo"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/costo_ad"
+                app:errorEnabled="true"
+                app:helperTextEnabled="true"
+                app:helperText="$0 = nacido en granja"
+                app:helperTextTextAppearance="@style/AppTheme.helper_text"
+                app:layout_constraintRight_toRightOf="parent"
+                app:prefixText="$ "
+                app:prefixTextColor="@color/colorPrimary"
+                app:layout_constraintTop_toBottomOf="@+id/input_numero"
+                android:layout_marginEnd="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/costo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:textSize="16sp"
+                    android:paddingTop="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:paddingEnd="0dp"
+                    android:paddingBottom="10dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_descrip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/descripcion"
+                app:errorEnabled="true"
+                app:helperTextEnabled="true"
+                android:layout_marginTop="5dp"
+                app:helperText="Detalles acerca del ejemplar(Opcional)"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/input_fecha_compra"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/descripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:textSize="16sp"
+                    android:imeOptions="actionDone"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/obligatorio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/campos_obligatorios"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/input_descrip"
+                android:textSize="12dp"
+                app:layout_goneMarginTop="10dp"
+                android:textColor="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/agregar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/agregar"
+                android:layout_marginTop="6dp"
+                app:layout_constraintTop_toBottomOf="@+id/obligatorio"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:background="@drawable/boton_redondeado"
+                android:layout_marginBottom="150dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

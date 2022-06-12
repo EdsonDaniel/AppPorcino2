@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/farm"
+            android:title="@string/inicio" />
+        <item
+            android:id="@+id/nav_ganado"
+            android:icon="@drawable/pork"
+            android:title="@string/ganado" />
+        <item
+            android:id="@+id/nav_eventos"
+            android:icon="@drawable/calendar"
+            android:title="@string/eventos" />
+        <item
+            android:id="@+id/nav_ventas"
+            android:icon="@drawable/ventas"
+            android:title="@string/ventas" />
+    </group>
+
+    <item android:title="@string/cuenta">
+        <menu>
+            <item
+                android:id="@+id/nav_perfil"
+                android:icon="@drawable/perfil"
+                android:title="@string/perfil" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/iconopig"
+                android:title="@string/about" />
+        </menu>
+    </item>
+
+</menu>

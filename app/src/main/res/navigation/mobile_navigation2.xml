@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.appporcino.BlankFragment"
+        android:label="@string/inicio"
+        tools:layout="@layout/fragment_blank" />
+
+    <fragment
+        android:id="@+id/navigation_produccion"
+        android:name="com.example.appporcino.ui.produccion.ProduccionFragment"
+        android:label="@string/produccion"
+        tools:layout="@layout/fragment_produccion" />
+
+    <fragment
+        android:id="@+id/navigation_gastos"
+        android:name="com.example.appporcino.ui.gastos.GastosFragment"
+        android:label="@string/gastos"
+        tools:layout="@layout/fragment_gastos" />
+
+    <fragment
+        android:id="@+id/navigation_alertas"
+        android:name="com.example.appporcino.ui.alertas.AlertasFragment"
+        android:label="@string/recordatorios"
+        tools:layout="@layout/fragment_alertas" />
+</navigation>

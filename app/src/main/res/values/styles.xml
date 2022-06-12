@@ -1,0 +1,75 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="textInputStyle">@style/TextInputLayout</item>
+        <item name="popupMenuStyle">@style/Widget.MaterialComponents.PopupMenu</item>
+        <item name="android:contextPopupMenuStyle" tools:targetApi="n">
+            @style/Widget.MaterialComponents.PopupMenu.ContextMenu
+        </item>
+        <item name="actionOverflowMenuStyle">@style/Widget.MaterialComponents.PopupMenu.Overflow
+        </item>
+        <item name="floatingActionButtonStyle">@style/Widget.Design.FloatingActionButton</item>
+    </style>
+
+    <style name="AppTheme.ThemeOverlay" parent="Theme.MaterialComponents.Light.DarkActionBar">
+
+    </style>
+
+    <style name="AppTheme.Autocomplet" parent="Widget.AppCompat.AutoCompleteTextView">
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:paddingTop">2dp</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.Cardview" parent="Widget.MaterialComponents.CardView">
+
+    </style>
+
+    <style name="ExposedDropdownMenu" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+    </style>
+
+    <style name="TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+    </style>
+
+    <style name="AppTheme.Calendar" parent="TextAppearance.MaterialCalendarWidget.Date">
+        <item name="android:textColor">@drawable/calendar_light</item>
+    </style>
+
+    <style name="AppTheme.helper_text" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">13dp</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:layout_marginStart">0dp</item>
+        <item name="android:layout_marginEnd">0dp</item>
+        <item name="android:textColor">@android:color/secondary_text_light_nodisable</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.Menu" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="popupMenuStyle">@style/Widget.MaterialComponents.PopupMenu</item>
+        <item name="android:contextPopupMenuStyle" tools:targetApi="n">
+            @style/Widget.MaterialComponents.PopupMenu.ContextMenu
+        </item>
+        <item name="actionOverflowMenuStyle">@style/Widget.MaterialComponents.PopupMenu.Overflow
+        </item>
+    </style>
+
+    <style name="AppTheme.floatAction" parent="Theme.MaterialComponents">
+        <item name="colorBackgroundFloating">@color/colorPrimary</item>
+    </style>
+
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- A CardView that contains a TextView -->
+    <com.google.android.material.card.MaterialCardView
+        style="@style/Widget.MaterialComponents.CardView"
+        android:id="@+id/card_view"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:minHeight="300dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="5dp"
+        android:elevation="5dp"
+        card_view:cardCornerRadius="7dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2dp">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="60dp"
+                android:layout_marginStart="8dp"
+                android:layout_height="60dp"
+                card_view:srcCompat="@drawable/pork"
+                android:contentDescription="@string/foto" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:id="@+id/titulo"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:layout_width="wrap_content"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    android:layout_height="wrap_content"
+                    card_view:layout_constraintTop_toTopOf="parent"
+                    android:padding="2dp"
+                    android:text="@string/prueba" />
+
+                <TextView
+                    android:id="@+id/estado"
+                    android:layout_width="wrap_content"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    android:layout_height="wrap_content"
+                    card_view:layout_constraintTop_toTopOf="parent"
+                    android:paddingTop="8dp"
+                    android:paddingEnd="2dp"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:text="@string/prueba" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginEnd="10dp">
+                <TextView
+                    android:id="@+id/propo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="2dp"
+                    card_view:layout_constraintTop_toTopOf="parent"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:text="@string/subtitulo"/>
+                <TextView
+                    android:id="@+id/edad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingEnd="2dp"
+                    card_view:layout_constraintTop_toTopOf="parent"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:text="@string/subtitulo"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        android:id="@+id/calendar"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:padding="0dp"
+        app:mcv_showOtherDates="all"
+        app:mcv_calendarMode="month"
+        app:layout_constraintTop_toTopOf="parent"
+        app:mcv_selectionColor="@color/colorPrimary"
+        app:mcv_dateTextAppearance="@style/AppTheme.Calendar"
+        app:mcv_weekDayTextAppearance="@style/AppTheme.Calendar"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        app:mcv_tileWidth="match_parent"
+        android:background="@color/colorPrimary"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_gravity="bottom|end"
+        app:srcCompat="@drawable/ic_add_event"
+        android:padding="1dp"
+        />
+    <TextView
+        android:id="@+id/text_events"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+    <include layout="@layout/fragment_event_list" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

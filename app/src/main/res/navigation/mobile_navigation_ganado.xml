@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation_ganado"
+    app:startDestination="@+id/navigation_todos">
+
+    <fragment
+        android:id="@+id/navigation_todos"
+        android:name="com.example.appporcino.ui.ganado.GanadoFragment"
+        android:label="@string/todos"
+        tools:layout="@layout/fragment_ganado" />
+
+    <fragment
+        android:id="@+id/navigation_hembras"
+        android:name="com.example.appporcino.ui.ganado.GanadoHembrasFragment"
+        android:label="@string/produccion"
+        tools:layout="@layout/fragment_ganado" />
+
+    <fragment
+        android:id="@+id/navigation_semental"
+        android:name="com.example.appporcino.ui.ganado.GanadoSementalFragment"
+        android:label="@string/gastos"
+        tools:layout="@layout/fragment_ganado" />
+
+    <fragment
+        android:id="@+id/navigation_engorda"
+        android:name="com.example.appporcino.ui.ganado.GanadoEngordaFragment"
+        android:label="@string/gastos"
+        tools:layout="@layout/fragment_ganado" />
+</navigation>
